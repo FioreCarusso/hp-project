@@ -1,48 +1,43 @@
 package ar.com.ada.online.second.characters;
 
-import java.util.ArrayList;
-
-public class Wizard<name> extends Character {
+public class Wizard extends Character {
 
     //ATRIBUTOS
-    private String wand;
+    private Wand wand;
 
+
+    //CONSTRUCTORES
     public Wizard() {
     }
 
-
-    public Wizard(String name, Integer energyLevel, Integer magicLevel, String location, String wand) {
+    public Wizard(String name, Integer energyLevel, Integer magicLevel, String location, Wand wand) {
         super(name, energyLevel, magicLevel, location);
         this.wand = wand;
     }
 
+    //GETTERS Y SETTERS
 
-    public String getWand() {
+    public Wand getWand() {
         return wand;
     }
 
-    public void setWand(String wand) {
+    public void setWand(Wand wand) {
         this.wand = wand;
     }
 
 
+
+    //METODO PROPIO DE CLASE
     public Boolean darkWizardOrNot() {
         return null;
     }
 
 
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
+    //METODOS REDEFINIDOS
 
     @Override
     public void Attack() {
+
 
 
     }

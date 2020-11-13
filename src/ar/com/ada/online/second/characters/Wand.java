@@ -1,10 +1,25 @@
 package ar.com.ada.online.second.characters;
 
-public abstract class Wand {
+import javax.swing.*;
+import java.util.Random;
 
+public class Wand extends Random {
+
+    //ATRIBUTOS
     public String name;
     public Integer damageBoost;
 
+    public Wand(){
+
+    }
+
+    //CONSTRUCTORES
+    public Wand(String name, Integer damageBoost) {
+        this.name = name;
+        this.damageBoost = damageBoost;
+    }
+
+    //GETTERS Y SETTERS
     public String getName() {
         return name;
     }

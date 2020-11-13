@@ -10,7 +10,8 @@ public abstract class Character {
     protected Integer energyLevel;
     protected Integer magicLevel;
     protected String location;
-
+    //LISTA DE HECHIZOS DEL PERSONAJE
+    ArrayList<String> spellList = new ArrayList<String>();
 
     //CONSTRUCTOR
     public Character() {
@@ -27,8 +28,8 @@ public abstract class Character {
     //ArrayList<String> nombreArrayList = new ArrayList<String>();
     //nombreArrayList.add("Elemento");
 
-    //LISTA DE HECHIZOS DEL PERSONAJE
-    ArrayList<String> spellList = new ArrayList<String>();
+
+
 
 
     //GETTERS Y SETTERS
